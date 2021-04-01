@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
 
+import 'body.dart';
+
 class HomeScreen extends StatelessWidget {
-  List _chats = [
-    {"profile": "", "name": "", "message": "", "time": ""},
-  ];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -14,9 +13,10 @@ class HomeScreen extends StatelessWidget {
             icon: Icon(Icons.search),
             onPressed: () => null,
           ),
+          // PopupMenuButton(itemBuilder: () => nul)
         ],
       ),
-      body: Text("This is body"),
+      body: Body(),
       floatingActionButton: FloatingActionButton(
         onPressed: () => null,
         child: Icon(Icons.message),

@@ -42,7 +42,6 @@ class ChatItem extends StatelessWidget {
           SizedBox(height: 6),
           Text(
             message,
-            textAlign: TextAlign.left,
             overflow: TextOverflow.ellipsis,
             maxLines: 1,
           )

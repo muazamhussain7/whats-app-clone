@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:whats_app_clone/chat_item.dart';
 
-class Body extends StatelessWidget {
+class ChatsScreen extends StatelessWidget {
   final List _chats = [
     {
       "profile": "assets/images/userImage1.jpeg",

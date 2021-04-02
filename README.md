@@ -5,8 +5,8 @@ This is a simple project which is developed in flutter. I made Whats App home sc
 # App Screenshots
 
 ## Chats Tab
-![](images/chats.png)
+![Chats Screen](images/chats.png "Chats Screen")
 ## Status Tab
-![](images/status.png)
+![Status Screen](images/status.png "Status Screen")
 ## Calls Tab
-![](images/calls.png)
+![Calls Screen](images/calls.png "Calls Screen")

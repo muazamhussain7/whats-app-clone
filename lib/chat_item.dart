@@ -1,51 +1,40 @@
 import 'package:flutter/material.dart';
 
-class ChatItem extends StatelessWidget {
-  final String profile;
-  final String name;
-  final String message;
-  final String time;
+import 'chats.dart';
 
-  const ChatItem({
-    @required this.profile,
-    @required this.name,
-    @required this.message,
-    @required this.time,
-  });
+class ChatItem extends StatelessWidget {
+  final Chats chat;
+
+  const ChatItem(this.chat);
   @override
   Widget build(BuildContext context) {
     return ListTile(
       leading: CircleAvatar(
-        backgroundImage: AssetImage(profile),
+        backgroundImage: AssetImage(chat.profile),
         maxRadius: 30,
       ),
-      title: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-        children: [
+      title: Text(
+        chat.name,
+        style: TextStyle(
+          fontSize: 16,
+          fontWeight: FontWeight.bold,
+        ),
+      ),
+      subtitle: Text(
+        chat.message,
+        overflow: TextOverflow.ellipsis,
+        maxLines: 1,
+      ),
+      trailing: Padding(
+        padding: const EdgeInsets.only(top: 12.0),
+        child: Column(children: [
           Text(
-            name,
-            style: TextStyle(
-              fontSize: 16,
-              fontWeight: FontWeight.bold,
-            ),
-          ),
-          Text(
-            time,
+            chat.timeStamp,
             style: TextStyle(
               fontSize: 12,
             ),
           ),
-        ],
-      ),
-      subtitle: Column(
-        children: [
-          SizedBox(height: 6),
-          Text(
-            message,
-            overflow: TextOverflow.ellipsis,
-            maxLines: 1,
-          )
-        ],
+        ]),
       ),
     );
   }

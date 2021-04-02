@@ -17,7 +17,10 @@ class HomeScreen extends StatelessWidget {
                 icon: Icon(Icons.search),
                 onPressed: () => null,
               ),
-              // PopupMenuButton(itemBuilder: () => nul)
+              IconButton(
+                icon: Icon(Icons.more_vert),
+                onPressed: () => null,
+              ),
             ],
             bottom: TabBar(
               tabs: [
@@ -25,6 +28,12 @@ class HomeScreen extends StatelessWidget {
                 Tab(text: "STATUS"),
                 Tab(text: "CALLS"),
               ],
+              indicator: UnderlineTabIndicator(
+                borderSide: BorderSide(
+                  width: 3,
+                  color: Colors.white,
+                ),
+              ),
             )),
         body: TabBarView(
           children: [

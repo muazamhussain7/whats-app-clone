@@ -14,6 +14,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Whats App Clone',
       theme: ThemeData(
+        primaryColor: Colors.teal[800],
         primarySwatch: Colors.green,
       ),
       home: HomeScreen(),

@@ -27,14 +27,16 @@ class ChatItem extends StatelessWidget {
       ),
       trailing: Padding(
         padding: const EdgeInsets.only(top: 12.0),
-        child: Column(children: [
-          Text(
-            chat.timeStamp,
-            style: TextStyle(
-              fontSize: 12,
+        child: Column(
+          children: [
+            Text(
+              chat.timeStamp,
+              style: TextStyle(
+                fontSize: 12,
+              ),
             ),
-          ),
-        ]),
+          ],
+        ),
       ),
     );
   }

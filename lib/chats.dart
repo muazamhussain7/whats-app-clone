@@ -4,14 +4,14 @@ class Chats {
   final String message;
   final String timeStamp;
 
-  Chats(
+  const Chats(
     this.profile,
     this.name,
     this.message,
     this.timeStamp,
   );
 
-  static final List<Chats> chats = [
+  static const List<Chats> chats = const [
     Chats(
       "assets/images/userImage2.jpeg",
       "Talib Hussain",
